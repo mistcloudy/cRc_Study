@@ -31,7 +31,7 @@ Git, Slack
 ###  Front Framework - React, Angular 
 本(책) : Click [] ()
 ###  SQL
-本(책) : Click [업무에 바로 쓰는 SQL 튜닝] (http://www.yes24.com/Product/Goods/102382080)
+本(책) : Click [업무에 바로 쓰는 SQL 튜닝](http://www.yes24.com/Product/Goods/102382080)
 
 ###  日本語、日本文化 (일본어, 일본 문화) - 単語、漢字、文法などの勉強は個人別に (단어, 한자, 문법 등의 공부는 개인별로)
 発表日にSlackにビジネス文化関連映像を共有して映像を見た後、感想を日本語で会話
