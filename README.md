@@ -51,6 +51,7 @@
 -----
 ###  Front Framework - React, Angular 
 #### 本(책) : [Do it! 리액트 프로그래밍의 정석](http://www.yes24.com/Product/Goods/87631428)
+#### 参考サイト(참고 사이트) : [벨로퍼트와 함께하는 모던 리액트](https://react.vlpt.us) 
 #### -Reactをメインにして、サブではAngularを勉強。w3schoolsとwebsourceをベースにして、必要ならば本として追加的な勉強。
 ##### React를 메인으로 하고, 서브로는 Angular를 공부. w3schools와 web source를 기반으로 하되 필요하다면 책으로 추가적인 공부.
 -----
