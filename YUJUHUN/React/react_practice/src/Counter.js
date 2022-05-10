@@ -5,11 +5,11 @@ function Counter() { // useState
 
     const onIncrease = () => {
        setNumber(prevNumber => prevNumber + 1);
-    }
+    };
 
     const onDecrease = () => {
         setNumber(prevNumber => prevNumber - 1);
-    }
+    };
 
     return (
         <div>
@@ -17,7 +17,7 @@ function Counter() { // useState
             <button onClick={onIncrease}>+1</button>
             <button onClick={onDecrease}>-1</button>
         </div>
-    )
+    );
 }
 
 export default Counter;
