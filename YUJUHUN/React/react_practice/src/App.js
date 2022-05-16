@@ -50,25 +50,29 @@ function App() {
         username,
         email
       };
-      setUsers(produce(user, draft => {
-        draft.users.push(user);
+      setUsers( produce (draft =>{
+        draft.push(user)
       })); // setUsers(users.concat(user));
-      // spread - copy array, concat - new array
+      // spread - copy array, concat - new array // immer = push array
       reset();
   nextId.current += 1;
     }, [ username, email, reset]);
 
     const onRemove = useCallback(
       id => {
-      setUsers(users.filter(user => user.id !== id));
-    }, [users]);
+      setUsers( produce (draft => {
+        const index = draft.findIndex(user => user.id === id);
+        draft.splice(index, 1); // immer 
+      }));
+    }, []);
 
     const onToggle = useCallback(
       id => {
-      setUsers( users =>
-        users.map(user =>
-          user.id === id ? { ...user, active: !user.active} : user)
-      );
+      setUsers( produce(draft => {
+        const user = draft.find(user => user.id === id);
+        user.active = !user.active;
+      })); // immer
+      
     }, []);
 
     const count = useMemo(() => countActiveUsers(users), [users]) ; 
