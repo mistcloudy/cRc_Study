@@ -53,6 +53,27 @@ public class BoardControllerTests {
 		
 		log.info(resultPage);
 	}
+	
+	@Test
+	public void testGet() throws Exception {
+		log.info(mockMvc.perform(MockMvcRequestBuilders
+				.get("/board/get")
+				.param("bno", "2"))
+				.andReturn()
+				.getModelAndView().getModelMap());
+	}
+	
+	@Test
+	public void testModify() throws Exception {
+		String resultPage = mockMvc
+				.perform(MockMvcRequestBuilders.post("/board/modify")
+						.param("bno", "1")
+						.param("title", "modified title")
+						.param("content", "modified content")
+						.param("write", "modified user"))
+				.andReturn().getModelAndView().getViewName();
+		log.info(resultPage);
+	}
 }
 
 
